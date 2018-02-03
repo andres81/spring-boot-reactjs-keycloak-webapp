@@ -1,0 +1,13 @@
+.fa.sign-out-icon {
+    font-size: 25px;
+    color:darkblue;
+    cursor:pointer;
+}
+
+.navbar-default {
+    background-color:white;
+}
+
+header {
+    background-color: #f8f9fa!important;
+}

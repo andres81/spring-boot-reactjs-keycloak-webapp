@@ -1,0 +1,23 @@
+.before-header {
+    height:100px;
+}
+
+.before-footer {
+    height:100px;
+}
+
+.between-rows {
+    height:50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.admin-title {
+    color: #d279d2;
+}

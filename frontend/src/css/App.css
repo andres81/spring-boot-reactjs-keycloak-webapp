@@ -1,0 +1,136 @@
+.loginmodal-container {
+    background-color: white;
+    padding:20px;
+}
+
+.form-control-feedback {
+    z-index: 0;
+}
+
+.form-input-error-message {
+    color: red;
+}
+
+a {
+    cursor: pointer;
+}
+
+.textAlignCenter {
+    text-align:center;
+}
+
+.close-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 25px;
+    right: 2px;
+    cursor: pointer;
+    z-index:1000;
+}
+
+.close-modal:hover {
+    opacity: 0.3;
+}
+
+.lr {
+    height: 40px;
+    width: 1px;
+    margin-left: 35px;
+    background-color: #222;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari and Chrome */
+    z-index: 1051;
+}
+
+.rl {
+    height:40px;
+    width:1px;
+    background-color:#222;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Safari and Chrome */
+    z-index:1052;
+}
+
+footer {
+    width: 100%;
+    z-index:1000;
+}
+
+.outline-none {
+    outline: none;
+}
+
+.outline-none:focus {
+    outline: 0 !important;
+}
+
+.border-none {
+    border: none;
+}
+
+.green {
+    color:green;
+}
+
+.green:focus {
+    color:green;
+}
+
+.red {
+    color:red;
+}
+
+.red:focus {
+    color:red;
+}
+
+a:hover.red, a:active.red, a:focus.red {
+    color:red;
+}
+
+@media screen and (max-width : 768px) {
+    .main-header .logo {
+        display: none;
+    }
+}
+
+.no-margin-left-right {
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.height-max {
+    height:100%;
+}
+
+.width-max {
+    width:100%;
+}
+
+.no-text-wrap {
+    white-space:nowrap;
+}
+
+.ReactModal__Overlay {
+    z-index:1050;
+}
+
+/*.box-header > .box-tools {*/
+    /*top: -4px;*/
+/*}*/
+
+/*.sidebar-menu > li > a > .fa {*/
+    /*text-align:center;*/
+/*}*/

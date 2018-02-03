@@ -1,0 +1,41 @@
+.collapsable {
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
+    overflow:hidden;
+    background-color: #e6edf7;
+}
+
+.collapsable-header {
+    background-color: white;
+    padding: 10px 10px 2px 20px;
+    color: green;
+    border-radius:7px;
+    cursor: pointer;
+}
+
+.collapsed {
+    max-height:0;
+}
+
+.uncollapsed {
+    max-height:300px;
+    overflow:hidden;
+}
+
+.turn180 {
+    transform: rotate(180deg);
+}
+
+.collapse-icon {
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.collapsable-container {
+    margin-top:5px;
+    margin-bottom:5px;
+}

@@ -1,0 +1,21 @@
+i.remove-icon {
+    text-shadow: 1px 1px black;
+    font-size:20px;
+    color:red;
+    cursor:pointer;
+}
+
+.remove-icon:hover {
+    text-shadow: 1px 1px white;
+}
+
+.permission-icon {
+    text-shadow: 1px 1px black;
+    font-size:20px;
+    color: #FFD700;
+    cursor:pointer;
+}
+
+.permission-icon:hover {
+    text-shadow: 1px 1px white;
+}

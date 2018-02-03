@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "build": "cd frontend && npm install && npm run build && cd .. && mkdir -p src/main/resources/public && cp -R frontend/build/* src/main/resources/public/",
+        "clean": "rm -rf src/main/resources/public/*"
+    }
+}
