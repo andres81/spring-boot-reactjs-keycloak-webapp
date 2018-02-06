@@ -31,6 +31,7 @@ class Profile extends React.Component {
         this.ondeleteAccount = this.ondeleteAccount.bind(this);
         this.openDeleteModal = this.openDeleteModal.bind(this);
         this.closeDeleteModal = this.closeDeleteModal.bind(this);
+        this.initUserDataInState = this.initUserDataInState.bind(this);
     }
 
     openDeleteModal() {
@@ -119,21 +120,17 @@ class Profile extends React.Component {
     }
 
     componentDidMount() {
-        var email = this.props.user.email;
-        var nickname = this.props.user.fullName;
-        if (email && email !== null
-                && nickname && nickname !== null) {
-            this.setState({
-                emailValue: this.props.user.email,
-                fullNameValue: this.props.user.fullName
-            });
-        }
+        this.initUserDataInState(this.props.user);
     }
 
     componentWillReceiveProps(nextProps) {
+        this.initUserDataInState(nextProps.user);
+    }
+
+    initUserDataInState(user) {
         this.setState({
-            emailValue: nextProps.user.email,
-            fullNameValue: nextProps.user.fullName,
+            emailValue: user.email == null ? "" : user.email,
+            fullNameValue: user.fullName == null ? "" : user.fullName,
             passwordValue: "",
             repasswordValue: "",
             emailEditing: false,

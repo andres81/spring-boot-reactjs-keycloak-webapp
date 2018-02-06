@@ -11,6 +11,8 @@ import {websiteTitle} from '../../conf/application.properties'
 import withRouter from "react-router-dom/es/withRouter";
 import {retrieveUserInfo} from "../../actions/userActions";
 
+import './style.css';
+
 class Login extends React.Component {
 
     constructor(props) {
@@ -41,8 +43,11 @@ class Login extends React.Component {
         this.setState({errors:{}, isLoading:true});
         this.props.login({...this.state, username: this.state.email}).then(
             () => {
-                this.props.retrieveUserInfo();
-                this.props.closeModal()
+                this.props.closeModal();
+                setTimeout(
+                    () => {
+                        this.props.retrieveUserInfo();
+                    }, 20)
             },
             (json) => {
                 if (json.errorCode === 1003) {

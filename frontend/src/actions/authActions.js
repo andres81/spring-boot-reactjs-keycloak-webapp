@@ -27,7 +27,7 @@ export function login(data) {
     return dispatch => {
         return postAction(dispatch, '/auth/login', requestBody).then(
             (response) => {
-                new Promise((resolve, reject) =>
+                return new Promise((resolve, reject) =>
                     response.json().then(
                         (json) => {
                             if (json.error) {
