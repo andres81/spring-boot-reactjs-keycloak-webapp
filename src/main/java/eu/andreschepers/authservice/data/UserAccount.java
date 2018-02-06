@@ -37,7 +37,7 @@ public class UserAccount {
     @Column(unique = true)
     private String email;
 
-    @Column(name = "is_admin")
+    @Column(name = "is_admin", columnDefinition="boolean default false")
     private boolean isAdmin;
 
     @ManyToMany
