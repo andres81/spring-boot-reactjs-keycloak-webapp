@@ -1,9 +1,8 @@
 import {combineReducers} from 'redux';
-
-import auth from './auth/authReducer';
-import user from './user/userReducer';
+import keycloak from "./keycloak/index";
+import profile from "./profile/index";
 
 export default combineReducers({
-    auth,
-    user
+    keycloak,
+    profile
 });
