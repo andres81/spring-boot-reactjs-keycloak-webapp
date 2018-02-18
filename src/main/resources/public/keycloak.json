@@ -1,0 +1,9 @@
+{
+  "realm": "andreschepers.eu",
+  "auth-server-url": "http://localhost:8180/auth",
+  "ssl-required": "external",
+  "resource": "website-fe",
+  "public-client": true,
+  "confidential-port": 0,
+  "enable-cors": true
+}

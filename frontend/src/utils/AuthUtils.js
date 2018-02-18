@@ -18,21 +18,6 @@ export function requestPasswordReset(data) {
         });
 }
 
-export function requestAccountConfirmationLink(data) {
-    return fetch(backendUrl+'/auth/userVerificationToken?email='+data.email, {method: "PUT"})
-        .then(function(response) {
-            return new Promise(function(resolve, reject) {
-                switch (response.status) {
-                    case 204:
-                        resolve();
-                        break;
-                    default:
-                        reject(response);
-                }
-            })
-        });
-}
-
 export function signup(data) {
 
     var myHeaders = new Headers();

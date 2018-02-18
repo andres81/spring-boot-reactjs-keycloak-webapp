@@ -134,3 +134,7 @@ a:hover.red, a:active.red, a:focus.red {
 /*.sidebar-menu > li > a > .fa {*/
     /*text-align:center;*/
 /*}*/
+
+.display-none {
+    display: none;
+}
