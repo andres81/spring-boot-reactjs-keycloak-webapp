@@ -32,7 +32,7 @@
     "jest": "22.1.4",
     "jquery": "^3.3.1",
     "keycloak-js": "^3.4.3",
-    "npm-check-updates": "^2.14.0",
+    "npm-check-updates": "^4.0.2",
     "object-assign": "4.1.1",
     "popper.js": "^1.12.9",
     "postcss-flexbugs-fixes": "3.3.0",
